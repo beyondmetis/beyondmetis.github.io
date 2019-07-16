@@ -3,9 +3,12 @@
 <html lang="en">
   <style>
 
+.panel-default > .panel-heading-custom {
+background: #bb8fce; color: #fff; }
+
 body {
   font-family: 'Bitter', serif;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 .my-template {
   padding: 40px 15px;
@@ -17,6 +20,28 @@ body {
 .subh{
   font-family: 'Bitter', serif;
   font-size:14pt;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #BB8FCE;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+    padding: 0.8rem 1rem;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    padding: 1rem 1rem;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color: #A569BD; /* add background-color to active links */
 }
 
   </style>
@@ -45,6 +70,25 @@ body {
   </head>
 
   <body>
+
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom p-0">
+    <a class="navbar-brand" href="#">Todd Goodall</a>
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://www.toddgoodall.com/publications">Publications</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br/>
+
 
     <div class="container">
 	<div class="row">
@@ -76,153 +120,99 @@ body {
 		</div>
 	</div>
 
-	<p class="lead">
-<hr/>
-<br/>
-		<span class="lead">Education</span><br/>
-      <div class="subh">
-<hr/>
-<hr/>
-	<div class="row">
-		<div class="col-md-12">
+<div class="card">
+  <div class="card-header">
+     <h3 class="panel-title">Education</h3>
+  </div>
+   <div class="card-body">
 			<p class="subh">Ph.D. in Electrical and Computer Engineering (May 2018)</p>
       <ul><li>Advisor Prof. Alan Bovik</li><li>Dissertation on no-reference video artifact assessment. Check out <a href='http://live.ece.utexas.edu/research/VIDMAP/VIDMAP.html'>VIDMAP</a>.</li></ul>
-		</div>
-	</div>
-</div></p>
-<hr/>
+
+   </div>
+</div>
 <br/>
 
-<p class="lead">
-  <span class="lead">Experience</span><br/>
-    <div class="subh">
-<hr/>
-<hr/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img height='80px' src="img/fb_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Facebook Reality Labs (Jul 2018 - Present)<ul><li>Researching quality assessment in AR/VR.</li><li>Building a virtual eye model for spatio-temporal sensitivity analysis across the visual field.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/UTAustin_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">University of Texas at Austin (Sep 2013 - May 2018)<ul><li>Finding applications for natural scene statistics in multiple imaging modalities.</li><li>Developing video quality assessment algorithms and demonstrations.</li><li>Automated source inspection of videos to detect artifacts.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/Oculus_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Oculus Research (May 2017 - Aug 2017)<ul><li>Worked with perception science team on vision problems related to quality assessment.</li><li>Provided new insights with respect to foveated rendering applications.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/Netflix_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Netflix (May 2015 - Aug 2015, May 2016 - Aug 2016) <ul><li>Applied video quality algorithms to real-world film content.</li><li>Developing new video quality assessment algorithms and improved VMAF.</li><li>Developed new state-of-the-art generalized methods for detecting artifacts in source videos.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/CargoSpectre_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">CargoSpectre LLC (May 2014 - Present) <ul><li>Developed vision algorithms for automatically dimensioning warehouse cargo.</li><li>Improved upon accuracy and speed of existing methods.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/AppliedResearch_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Applied Research Labs (May 2012 - August 2013) <ul><li>Researched compression schemes for reducing data loads.</li><li>Adapted perceptual quality assessment to SONAR images.</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/CUlogo.png"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Clemson University (May 2011 - August 2011) <ul><li>Optimized face recognition algorithms for GPGPU hardware using CUDA</li></ul></p>
-		</div>
-	</div>
-  <br/>
-	<div class="row">
-		<div class="col-md-3">
-			<center><img width='100px' src="img/Itron_logo.jpg"></center>
-		</div>
-		<div class="col-md-8">
-			<p class="subh">Itron, Inc. (May 2009 - Aug 2009, Jan 2010 - May 2011) <ul><li>Developed indispensable power meter tracking website.</li><li>Interfaced smart meter data with Google Earth, improving internal visualizations.</li></ul></p>
-		</div>
-	</div>
-<br/>
-</div></p>
-
-<hr/>
-<br/>
-
-	<p class="lead">
-		<span class="lead">Publications</span><br/>
-      <div class="subh">
-<hr/>
-<hr/>
-T. Goodall. Virtual Eye: a Spatial-Temporal Bottom-Up Eye Sensitivity Model. Computational and Mathematical Models in Vision. 2019
-<br/>
-<br/>
-T. Goodall and A. C. Bovik. Detecting and Mapping Video Impairments. Transactions on Image Processing. Submitted 2018.
-<br/>
-<br/>
-T. Goodall and A. C. Bovik. Artifact Detection Maps Learned using Shallow Convolutional Networks. Southwest Symposium on Image Analysis and Interpretation. 2018.
-<br/>
-<br/>
-T. Goodall and A. C. Bovik. Detecting Source Artifacts with Supervised Sparse Filters. Picture Coding Symposium. 2018.
-<br/>
-<br/>
-T. Goodall, Maria Esteva, Sandra Sweat, and A. C. Bovik. Towards Automated Quality Curation of Video Collections from a Realistic Perspective. IEEE Conference on Big Data. 2017.
-<br/>
-<br/>
-A. C. Bovik, C. Bampis,  and T. Goodall. Perceptual Issues of Streaming Video. Society for Information Display. 2017.
-<br/>
-<br/>
-C. Bampis, T. Goodall, and A. C. Bovik. Sampled Efficient Full-Reference Image Quality Assessment Models. Asilomar Conference on Signals, Systems, and Computers. 2016.
-<br/>
-<br/>
-T. Goodall, I. Katsavounidis, Z. Li, A. Aaron, and A. C. Bovik. Blind Picture Upscaling Ratio Prediction. IEEE Signal Processing Letters. 2016.
-<br/>
-<br/>
-T. Goodall, A. C. Bovik, N. G. Paulter, and H. Vikalo, Non-uniformity Correction of IR Images using Natural Scene Statistics. IEEE Global Conference on Signal and Information Processing. 2015.
-<br/>
-<br/>
-T. Goodall, A. C. Bovik, and N. G. Paulter Jr., "Tasking on Natural Statistics of Infrared Images." IEEE Transactions on Image Processing. 2015. 
-<br/>
-<br/>
-M. Esteva, A. Bowen, T. Goodall, A. C. Bovik, and Z. B. Abel. "Evaluation of Non-Reference Quality Assessment Algorithms to Curate Born-Digital Video Collections." IS&amp;T Archiving Conference. 2015.
-<br/>
-<br/>
-J. Jendzurski, N. G. Paulter, F. Amon, E. Jacobs, A. C. Bovik, and T. Goodall. "Image Quality Testing: Selection of Images for Assessing Test Subject Input." Proceedings of the 8th International Conference on Sensing Technology. 2014.
-<br/>
-<br/>
-T. Goodall and A. C. Bovik. "No-Reference Task Performance Prediction on Distorted LWIR Images." 2014 Southwest Symposium on Image Analysis and Interpretation. 2014.
-<br/>
-<br/>
-T. Goodall, S. Gibson, and M. C. Smith. "Parallelizing Principal Component Analysis for Robust Facial Recognition Using CUDA." Symposium on Application Accelerators in High-Performance Computing. 2012.
-        
+<div class="card">
+  <div class="card-header">
+       <h3 class="panel-title">Experience</h3>
+   </div>
+   <div class="card-body">
+    <div class="row">
+      <div class="col-md-3">
+        <center><img height='80px' src="img/fb_logo.jpg"></center>
       </div>
-</p>
+      <div class="col-md-8">
+        <p class="subh">Facebook Reality Labs (Jul 2018 - Present)<ul><li>Researching quality assessment in AR/VR.</li><li>Building a virtual eye model for spatio-temporal sensitivity analysis across the visual field.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/UTAustin_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">University of Texas at Austin (Sep 2013 - May 2018)<ul><li>Finding applications for natural scene statistics in multiple imaging modalities.</li><li>Developing video quality assessment algorithms and demonstrations.</li><li>Automated source inspection of videos to detect artifacts.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/Oculus_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">Oculus Research (May 2017 - Aug 2017)<ul><li>Worked with perception science team on vision problems related to quality assessment.</li><li>Provided new insights with respect to foveated rendering applications.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/Netflix_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">Netflix (May 2015 - Aug 2015, May 2016 - Aug 2016) <ul><li>Applied video quality algorithms to real-world film content.</li><li>Developing new video quality assessment algorithms and improved VMAF.</li><li>Developed new state-of-the-art generalized methods for detecting artifacts in source videos.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/CargoSpectre_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">CargoSpectre LLC (May 2014 - Present) <ul><li>Developed vision algorithms for automatically dimensioning warehouse cargo.</li><li>Improved upon accuracy and speed of existing methods.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/AppliedResearch_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">Applied Research Labs (May 2012 - August 2013) <ul><li>Researched compression schemes for reducing data loads.</li><li>Adapted perceptual quality assessment to SONAR images.</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/CUlogo.png"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">Clemson University (May 2011 - August 2011) <ul><li>Optimized face recognition algorithms for GPGPU hardware using CUDA</li></ul></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3">
+        <center><img width='100px' src="img/Itron_logo.jpg"></center>
+      </div>
+      <div class="col-md-8">
+        <p class="subh">Itron, Inc. (May 2009 - Aug 2009, Jan 2010 - May 2011) <ul><li>Developed indispensable power meter tracking website.</li><li>Interfaced smart meter data with Google Earth, improving internal visualizations.</li></ul></p>
+      </div>
+   </div>
+ </div>
+
+<br/>
+
+
 
     </div><!-- /.container -->
 
